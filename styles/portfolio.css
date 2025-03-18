@@ -47,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 10rem;
+    padding: 0.2rem 5%;
     animation: to_bottom 1s ease forwards;
 }
 
@@ -70,6 +70,9 @@ header nav a:active {
 
     margin-left: 8rem;
     z-index: 3;
+}
+.text-box{
+    margin-top: 5%;
 }
 
 .text-box h1 {
@@ -238,7 +241,7 @@ header nav a:active {
     align-items: center;
     max-width: 500px;
     margin: auto;
-    gap: 20px;
+    gap: 10%;
 
 }
 
@@ -509,6 +512,12 @@ form .btn2:hover {
 .copyright p {
     color: var(--blue-color);
 }
+.line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
 
 @media screen and (min-width:800px) {
     .nomb {
@@ -528,6 +537,16 @@ form .btn2:hover {
 
     .moi {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content-box {
+        width: 50%;
+    }
+    
+    .moi {
+        width: 30%;
     }
 }
 
@@ -580,5 +599,158 @@ form .btn2:hover {
 
     100% {
         transform: scale(1);
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 801px) {
+    .content-box {
+        width: 60%;
+        margin-left: 5rem;
+    }
+    
+    .moi {
+        width: 35%;
+        margin-right: 5rem;
+    }
+    
+    .text-box h1 {
+        font-size: 3.8rem;
+    }
+    
+    .tab-content {
+        margin-left: 20%;
+    }
+}
+
+/* Small screens / tablets */
+@media screen and (max-width: 800px) {
+    /* Show mobile menu button */
+    .nomb {
+        display: block;
+        cursor: pointer;
+        font-size: 2.5rem;
+    }
+    
+    /* Hide desktop menu */
+    .nom {
+        display: none;
+    }
+    
+    /* Mobile menu styles - add this for dropdown functionality */
+    .nom.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2C3930;
+        padding: 2rem;
+    }
+    
+    .nom.active a {
+        margin: 1rem 0;
+    }
+    
+    /* Adjust home section */
+    #accueil {
+        flex-direction: column;
+        text-align: center;
+        padding: 12rem 2rem 5rem 2rem;
+    }
+    
+    .content-box {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    
+    .content-box .icon-box {
+        flex-direction: row;
+        margin: 2rem 0;
+    }
+    
+    .moi {
+        display: block;
+        width: 60%;
+        max-width: 300px;
+        margin: 4rem auto 0;
+    }
+    
+    .text-box h1 {
+        font-size: 3.2rem;
+    }
+    
+    /* Adjust presentation section */
+    .tab-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    /* Adjust projects section */
+    .projet {
+        width: 90%;
+        min-width: unset;
+        height: auto;
+    }
+    
+    .img-projet {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Adjust contact section */
+    #contact .container {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    
+    .contact-left, .contact-right {
+        width: 100%;
+    }
+    
+    .social-icons a {
+        margin-left: 2rem;
+    }
+
+    .tab-titles {
+        margin-left: 10%;
+        gap: 2%;
+    }
+}
+
+/* Extra small screens / mobile phones */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.2rem 2rem;
+    }
+    
+    .text-box h1 {
+        font-size: 2.6rem;
+    }
+    
+    
+    
+    .tab-links {
+        margin-right: 0;
+    }
+    
+    .tab-content {
+        font-size: 150%;
+    }
+    
+    .certifications-container {
+        margin-right: 0;
+    }
+    
+    .contact-left {
+        font-size: 180%;
+    }
+    
+    .social-icons {
+        text-align: center;
+    }
+    
+    .social-icons a {
+        margin: 0 1rem;
     }
 }
