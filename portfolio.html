@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta type="description" content="Bonjour, Je suis Enes UZUN et ceci est mon portfolio étudiant." <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes UZUN</title>
+    <link rel="stylesheet" href="/styles/portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/4162108d67.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo_eu.jpg" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1><a href="#accueil" class="active"><img src="/images/logo_eu.png" width="80px" height="80px"></a>
+        </h1>
+        <nav>
+            <div class="nom">
+                <a href="#presentation">Présentation</a>
+                <a href="#projets">Projets</a>
+
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nomb">
+                <p> X</p>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- Accueil -->
+    <section id="accueil">
+        <div class="content-box">
+            <div class="icon-box">
+                <a href="https://github.com/Enesinho90" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/enes-alperen-uzun-b89806250/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+            <div class="text-box">
+                <h1>Salut, je suis Enes UZUN </h1>
+                <h1>et je suis <span class="skills"> étudiant en informatique</span> </h1>
+                <p>
+                    Passionné par l'informatique, je suis actuellement en 3ème année en école d'ingénieur à l'UTBM où
+                    j'apprends à développer des
+                    logiciels et à comprendre les technologies du numérique. Je m'intéresse particulièrement à la
+                    programmation web, mobile et a l'intelligence artificielle. Mon objectif est de
+                    toujours apprendre et d'améliorer mes compétences pour relever de nouveaux défis dans le domaine de
+                    l'informatique. Je suis actuellement a la recherche d'un stage Bac+4 dans le développement web,
+                    n'hesitez
+                    pas a me contacter !
+                </p>
+                <button type="button" class="btn">
+                    <a href="/images/CV_Enes_UZUN.pdf" download="cv_enes_uzun.pdf">
+                        <i class="fa-solid fa-download"></i> CV
+                    </a>
+                </button>
+
+            </div>
+        </div>
+        <img src="/images/me.png" class="moi" alt="Photo de moi">
+    </section>
+
+    <!-- Présentation -->
+    <section id="presentation">
+        <h2>Présentation</h2>
+        <div class="container">
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('parcours')">Parcours</p>
+                <p class="tab-links" onclick="opentab('competences')">Compétences</p>
+                <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+            </div>
+            <div class="tab-content active-tab" id="parcours">
+                <ul>
+                    <li>
+                        <span>Ecole d'ingénieur UTBM</span><br> <span class="italic">2024 - </span> Algorithmes,
+                        Développement, Orienté objet, Web, Mobile, Réseaux, Base de données.
+                    </li>
+                    <li>
+                        <span>Classe préparatoire intégrée UTBM</span><br> <span class="italic">2022 - 2024 </span>
+                        Mathématiques, Physiques, Informatique. Obtention du DEUTEC.
+                    </li>
+                    <li>
+                        <span>Lycée Général</span><br> <span class="italic">2019 - 2022 </span> Spécialité
+                        Mathematiques, Sciences de l'ingénieur. Obtention du bac avec
+                        mention Bien.
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="competences">
+                <ul class="line">
+                    <li>
+                        <span>Développement logiciel</span><br> <img class="small" src="/images/c-logo.png"
+                            alt="C language"></img>
+                        <img class="small" src="/images/cpp-logo.png" alt="C++ language">
+                        <img class="small" src="/images/python-logo.png" alt="Python language">
+                        <img class="small" src="/images/java-logo.png" alt="Java language">
+                    </li>
+                    <li>
+                        <span>Développement web</span><br>
+                        <img class="small" src="/images/html-logo.png" alt="HTML language"></img>
+                        <img class="small" src="/images/css-logo.png" alt="CSS language">
+                        <img class="small" src="/images/javascript-logo.png" alt="Javascript language">
+                        <img class="small" src="/images/php-logo.svg" alt="PHP language">
+                    </li>
+                    <li>
+                        <span>Base de données</span><br>
+                        <img class="small" src="/images/mysql-logo.svg" alt="MySQL">
+
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="certifications">
+                <div class="certifications-container">
+                    <div class="certification">
+                        <img src="/images/certificat_cisco_2.jpg" alt="Certification CISCO" class="certif-img">
+                        <p>CCNA : Introduction to networks - Cisco</p>
+                    </div>
+                    <div class="certification">
+                        <img src="/images/certifcat_cisco_1.jpg" alt="Certification CISCO" class="certif-img">
+                        <p>CCNA : Switching, Routing, and Wireless Essentials - Cisco</p>
+                    </div>
+
+                    <div class="certification">
+                        <img src="/images/certificat-nvidia.png" alt="Certification NVIDIA" class="certif-img">
+                        <p>Fundamentals of Accelerated Computing with CUDA Python - Nvidia</p>
+                    </div>
+                    <div class="certification">
+                        <img src="images/certificat-linguaskill.jpg" alt="Certification Linguaskill" class="certif-img">
+                        <p>Niveau B2/C1 Anglais - Cambridge Linguaskill</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal pour agrandir l'image -->
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-img">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="container-projets">
+            <div class="projet"><a href="https://github.com/Enesinho90/RasendeRoboter" target="_blank"> <img
+                        class="img-projet" src="/images/rasende_roboter.PNG"></a>
+                <div class="langage-utilisé"> <img class=img-langage src="images/python-logo.png"></div>
+                <p class="description-projet"> Implémentation du jeu RasendeRoboter avec interface graphique ainsi que 3
+                    niveau d'IA.</p>
+            </div>
+            <div class="projet"><a href="https://github.com/Enesinho90/AP4A" target="_blank"> <img class="img-projet"
+                        src="/images/ap4a.PNG"></a>
+                <div class="langage-utilisé"> <img class=img-langage src="images/cpp-logo.png"></div>
+                <p class="description-projet"> Implémentation d'un simulateur IoT modélisant un
+                    écosystème connecté permettant de surveiller la qualité de l’air</p>
+            </div>
+            <div class="projet"><a href="https://github.com/Enesinho90/UTBM-conquest" target="_blank"> <img
+                        class="img-projet" src="/images/utbm_conquest.PNG"></a>
+                <div class="langage-utilisé"> <img class=img-langage src="images/java-logo.png"></div>
+                <p class="description-projet"> Implémentation du jeu Troyes Dice revisité avec interface graphique.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <div class="contact-left">
+                <p><i class="fa-solid fa-envelope"></i> enes-alperen.uzun@utbm.fr</p>
+                <p><i class="fa-solid fa-phone"></i> +33 x xx xx xx</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Enesinho90" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/enes-alperen-uzun-b89806250/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <button type="button" class="btn">
+                        <a href="/images/CV_Enes_UZUN.pdf" download="cv_enes_uzun.pdf">
+                            <i class="fa-solid fa-download"></i> CV
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form class="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Nom " required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Object" placeholder="Objet" required>
+                    <textarea name="Message" rows="6" placeholder="Votre message"></textarea>
+                    <button type="submit" class="btn btn2">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p> Copyright ⓒ 2025 Enes UZUN</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".certif-img");
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            const closeBtn = document.querySelector(".close");
+
+            images.forEach(img => {
+                img.addEventListener("click", function () {
+                    modal.style.display = "flex";
+                    modalImg.src = this.src;
+                });
+            });
+
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            modal.addEventListener("click", function (e) {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        });
+
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz96K599jwZRqhIv-RqqxCm6EMfILhDxBorQZRsiYsdJIVLvXl3Am7CfHrVyNeCaYXu/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
