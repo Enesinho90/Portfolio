@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta type="description" content="Bonjour, Je suis Enes UZUN et ceci est mon portfolio étudiant.">
+    <meta name="description" content="Bonjour, Je suis Enes UZUN et ceci est mon portfolio étudiant.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enes UZUN</title>
     <link rel="stylesheet" href="styles/portfolio.css">
@@ -21,14 +21,11 @@
             <div class="nom">
                 <a href="#presentation">Présentation</a>
                 <a href="#projets">Projets</a>
-
                 <a href="#contact">Contact</a>
             </div>
             <div class="nomb">
-                <p> X</p>
+                <p><i class="fa-solid fa-bars"></i></p>
             </div>
-
-
         </nav>
     </header>
 
@@ -252,6 +249,23 @@
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
         })
+        // Mobile menu toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.querySelector('.nomb');
+    const mobileMenu = document.querySelector('.nom');
+    
+    mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+    });
+    
+    // Close menu when clicking a link
+    const mobileLinks = document.querySelectorAll('.nom a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+        });
+    });
+});
     </script>
 </body>
 
